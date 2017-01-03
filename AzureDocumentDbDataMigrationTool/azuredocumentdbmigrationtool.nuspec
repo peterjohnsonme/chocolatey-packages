@@ -6,13 +6,14 @@
     <title>Azure DocumentDB Data Migration Tool</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectUrl>
-	<packageSourceUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</packageSourceUrl>
+	<packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/AzureDocumentDbDataMigrationTool</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-documentdb-datamigrationtool/blob/master/LICENSE.txt</licenseUrl>
 	<iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/azure/documentdb/documentdb-import-data</docsUrl>
     <tags>documentdbdatamigrationtool admin azure documentdb nosql data migration</tags>
+	<summary>The DocumentDB Data Migration tool is an open source solution that imports data to DocumentDB from a variety of sources.</summary>
     <description>The DocumentDB Data Migration tool is an open source solution that imports data to DocumentDB from a variety of sources, including:
 
 - JSON files
