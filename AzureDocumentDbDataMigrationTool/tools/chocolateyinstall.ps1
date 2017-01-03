@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName= 'AzureDocumentDbMigrationTool'
+$packageName= 'azure-documentdb-data-migration-tool'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://download.microsoft.com/download/E/1/4/E143A339-41AE-4E0E-9CC8-911C0B663478/dt-1.7.zip'
 
@@ -10,7 +10,7 @@ $packageArgs = @{
   fileType      = 'EXE_MSI_OR_MSU'
   url           = $url
 
-  softwareName  = 'DocumentDbMigrationTool*'
+  softwareName  = 'Azure Document DB Data Migration Tool*'
   checksum      = '65ccb425cdb83c7f6165546d8e3e83392efa6367'
   checksumType  = 'sha1'
 
