@@ -6,6 +6,7 @@
     <title>Azure DocumentDB Data Migration Tool</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectUrl>
+	<packageSourceUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-documentdb-datamigrationtool/blob/master/LICENSE.txt</licenseUrl>
 	<iconUrl>https://1.gravatar.com/avatar/425be63bdaaeeffd26d0172ed2030198?d=https%3A%2F%2Fidenticons.github.com%2F732737be523b073de1e3f4cce6660d01.png&amp;r=x&amp;s=128</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
