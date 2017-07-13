@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>azure-cli-windows</id>
+    <id>azure-cli</id>
     <version>2.0.10</version>
-    <title>Azure CLI for Windows</title>
+    <title>Azure CLI</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/azure/azure-cli/</projectUrl>
 	<packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/AzureCLI</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE.txt</licenseUrl>
-	<iconUrl>https://github.com/peterjohnsonme/chocolatey-packages/raw/master/AzureCLI/azure-cli-windows-logo.png</iconUrl>
+	<iconUrl>https://github.com/peterjohnsonme/chocolatey-packages/raw/master/AzureCLI/azure-cli-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/azure/azure-cli/</projectSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/cli/azure/install-azure-cli</docsUrl>

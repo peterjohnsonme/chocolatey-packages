@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName = 'azure-cli-windows'
-$softwareName = 'Azure CLI for Windows*'
+$packageName = 'azure-cli'
+$softwareName = 'Azure CLI*'
 $installerType = 'MSI' 
 
 $silentArgs = '/qn /norestart'
