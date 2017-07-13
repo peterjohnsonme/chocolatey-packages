@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>azure-cli-windows</id>
+    <version>2.0.10</version>
+    <title>Azure CLI for Windows</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://github.com/azure/azure-cli/</projectUrl>
+	<packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/AzureCLI</packageSourceUrl>
+    <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE.txt</licenseUrl>
+	<iconUrl>https://github.com/peterjohnsonme/chocolatey-packages/raw/master/AzureCLI/azure-cli-windows-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/azure/azure-cli/</projectSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/cli/azure/install-azure-cli</docsUrl>
+    <tags>azurecli cli admin azure</tags>
+	<summary>The Azure CLI is Azure's command line experience for managing Azure resources.</summary>
+    <description>Azure CLI is optimized for managing and administering Azure resources from the command line, and for building automation scripts that work against the Azure Resource Manager.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
