@@ -2,7 +2,7 @@
 
 $packageName= 'azure-cli'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://azurecliprod.blob.core.windows.net/msi/azure-cli-2.0.23.msi'
+$url        = 'https://azurecliprod.blob.core.windows.net/msi/azure-cli-2.0.24.msi'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -10,7 +10,7 @@ $packageArgs = @{
   fileType      = "msi"
 
   softwareName  = 'Microsoft CLI 2.0 for Azure'
-  checksum      = '791dc8bfe464e51c22b5c2d8927852c48ca4a062'
+  checksum      = 'e44ab531694317991bb516feef625ed059b0f34b'
   checksumType  = 'sha1'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" 
