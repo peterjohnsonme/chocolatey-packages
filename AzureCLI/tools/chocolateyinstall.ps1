@@ -2,11 +2,11 @@
 
 $packageName= 'azure-cli'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file        = './bin/azure-cli-2.0.27.msi'
+$file       = Join-Path $toolsDir 'azure-cli-2.0.27.msi'
 
 $packageArgs = @{
   packageName   = $packageName
-  url      		= $file
+  file      		= $file
   fileType      = "msi"
 
   softwareName  = 'Microsoft CLI 2.0 for Azure'
@@ -17,4 +17,4 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
