@@ -1,9 +1,0 @@
-This binary file is downloaded from Microsoft at:
-https://azurecliprod.blob.core.windows.net/msi/azure-cli-latest.msi
-
-Previous versions are available at a numbered version e.g.:
-https://azurecliprod.blob.core.windows.net/msi/azure-cli-2.0.26.msi
-
-Due to the fact that this is a "latest" build and is not numbered,
-the package maintainer simply downloads the file from that location, 
-renames it, and includes it in the package.
