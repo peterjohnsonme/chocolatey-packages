@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName= 'azure-cli'
-$url        = 'https://azurecliprod.azureedge.net/msi/azure-cli-2.0.32.msi'
+$url        = 'https://azurecliprod.azureedge.net/msi/azure-cli-2.0.34.msi'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -9,7 +9,7 @@ $packageArgs = @{
   fileType      = "msi"
 
   softwareName  = 'Microsoft CLI 2.0 for Azure'
-  checksum      = '9db20f54afc17e35d9f69d967ec0ec5f18dffa4f'
+  checksum      = '2ed27b9297e81b4564f4ff4abfafbcf4f155aed1'
   checksumType  = 'sha1'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" 
