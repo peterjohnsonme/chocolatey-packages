@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azure-cli</id>
-    <version>2.0.46</version>
+    <version>2.0.47</version>
     <title>Azure CLI</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/azure/azure-cli/</projectUrl>
