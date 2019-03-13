@@ -22,17 +22,6 @@ environment:
   github_api_key:
     secure: fwhPLp7VjjxW3TaS5qGkIq/4Nmsy1em5A5v8q7JEMA9ydu69RGy1jWmPjpvgF0Kn #https://ci.appveyor.com/tools/encrypt
 
-
-  # Mail credentials - for error notifications
-  mail_user:
-    secure: HC5DMwg56231mto2apKIQVrpo3YzsdHZhHvu3hkuEeg= #https://ci.appveyor.com/tools/encrypt
-  mail_pass:
-    secure: 2gEU7oryHvAqVqMrJhzWCQ== #https://ci.appveyor.com/tools/encrypt
-  mail_server:
-    secure: VNIITlH/BDkg4lRS4kyXpBaVxMYWH2q/qaGRLWlUW3U= #https://ci.appveyor.com/tools/encrypt
-  mail_port: 465
-  mail_enablessl: false
-
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
   gist_id: 8f131672f10ddadd06eac53ae5fff3ce
