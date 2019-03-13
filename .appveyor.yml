@@ -1,0 +1,114 @@
+# AU template: https://github.com/majkinetor/au-packages-template
+
+version: '{build}'
+max_jobs: 1
+# History plugin requires complete log
+#clone_depth: 5
+branches:
+  only:
+  - master
+#build:
+#  verbosity: minimal
+
+environment:
+  # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
+  au_version:
+  au_push: true
+  # Force test: use 1 to test all, or N to split testing into N groups
+  au_test_groups: 1
+
+  # Github token to commit pushed packages to repository
+  github_user_repo: peterjohnsonme/chocolatey-packages
+  github_api_key:
+    secure: fwhPLp7VjjxW3TaS5qGkIq/4Nmsy1em5A5v8q7JEMA9ydu69RGy1jWmPjpvgF0Kn #https://ci.appveyor.com/tools/encrypt
+
+
+  # Mail credentials - for error notifications
+  mail_user:
+    secure: HC5DMwg56231mto2apKIQVrpo3YzsdHZhHvu3hkuEeg= #https://ci.appveyor.com/tools/encrypt
+  mail_pass:
+    secure: 2gEU7oryHvAqVqMrJhzWCQ== #https://ci.appveyor.com/tools/encrypt
+  mail_server:
+    secure: mi3-wss5.a2hosting.com
+  mail_port: 465
+  mail_enablessl: true
+
+  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
+  # Optional, leave empty to create anonymous gist
+  gist_id: 3d1844b4f845704d66411ee720467b60
+
+  # Force test: gist id for test results
+  gist_id_test: a293bdc7f5f7235e5942f1aabf339885
+
+  # Chocolatey API key - to push updated packages
+  api_key:
+    secure: MLFOGUaLooCjZUQ8tT/K/lKHIA0e5e65xMe/7lQdtix1II6le+173jNDS06qpgGi # https://ci.appveyor.com/tools/encrypt
+
+init:
+- git config --global user.email "1328982+peterjohnsonme@users.noreply.github.com"
+- git config --global user.name "peterjohnsonme"
+- git config --global core.safecrlf false
+
+install:
+- ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
+- ps: $PSVersionTable
+- git --version
+- choco --version
+- ps: |
+    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+
+- ps: |
+    "Build info"
+    '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
+    '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
+    '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
+
+# Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
+# - cinst chocolatey-core.extension
+    
+build_script:
+- ps: |
+    $ErrorActionPreference = 'Continue'
+
+    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+
+    if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
+        switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
+        {
+            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+
+            '\[PUSH (.+?)\]' {
+                $packages = $Matches[1] -split ' '
+                Write-Host "PUSHING PACKAGES: $packages"
+                foreach ($package in $packages) {
+                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
+                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
+                    pushd $package_dir
+                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                      choco pack; Push-Package;
+                    popd
+                }
+                return
+            }
+        }
+    }
+
+    ./update_all.ps1 -ForcedPackages $forced
+    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+
+artifacts:
+- path: update_info.xml
+- path: Update-AUPackages.md
+- path: au_temp.zip
+
+notifications:
+- provider: Email
+  to: $(mail_user)
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
+
+#on_finish:
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
