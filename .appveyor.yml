@@ -29,16 +29,16 @@ environment:
   mail_pass:
     secure: 2gEU7oryHvAqVqMrJhzWCQ== #https://ci.appveyor.com/tools/encrypt
   mail_server:
-    secure: VNIITlH/BDkg4lRS4kyXpBaVxMYWH2q/qaGRLWlUW3U=
+    secure: mi3-wss5.a2hosting.com
   mail_port: 465
-  mail_enablessl: true
+  mail_enablessl: false
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: 8f131672f10ddadd06eac53ae5fff3ce
+  gist_id: 3d1844b4f845704d66411ee720467b60
 
   # Force test: gist id for test results
-  gist_id_test: 8eaa0ebe32746b42acf6a3e6af5a907a
+  gist_id_test: a293bdc7f5f7235e5942f1aabf339885
 
   # Chocolatey API key - to push updated packages
   api_key:
