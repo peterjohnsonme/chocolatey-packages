@@ -1,14 +1,15 @@
 
 [![](https://ci.appveyor.com/api/projects/status/github/peterjohnsonme/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/PeterJohnson21957/chocolatey-packages)
+
 [Update status](https://gist.github.com/peterjohnsonme/8f131672f10ddadd06eac53ae5fff3ce)
-[![](http://transparent-favicon.info/favicon.ico)](#)
+
 [chocolatey/peterj](https://chocolatey.org/profiles/peterj)
 
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
-Thanks to [jbpaux](https://github.com/jbpaux).
+Thanks to [jbpaux](https://github.com/jbpaux) for pointing me in the right direction, and creating the auto-updated versions of these packages.
 
 ## Prerequisites
 
