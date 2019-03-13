@@ -29,7 +29,7 @@ environment:
   mail_pass:
     secure: 2gEU7oryHvAqVqMrJhzWCQ== #https://ci.appveyor.com/tools/encrypt
   mail_server:
-    secure: mi3-wss5.a2hosting.com
+    secure: VNIITlH/BDkg4lRS4kyXpBaVxMYWH2q/qaGRLWlUW3U=
   mail_port: 465
   mail_enablessl: true
 
