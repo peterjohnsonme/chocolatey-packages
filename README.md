@@ -1,5 +1,5 @@
 
-[![](https://ci.appveyor.com/api/projects/status/github/peterjohnsonme/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/PeterJohnson21957/chocolatey-packages)
+[![](https://ci.appveyor.com/api/projects/status/github/peterjohnsonme/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/peterjohnsonme/chocolatey-packages)
 
 [Update status](https://gist.github.com/peterjohnsonme/8f131672f10ddadd06eac53ae5fff3ce)
 
