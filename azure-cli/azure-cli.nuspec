@@ -7,9 +7,9 @@
     <title>Azure CLI</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/azure/azure-cli/</projectUrl>
-    <packageSourceUrl>https://github.com/jbpaux/chocolatey-packages/tree/master/azure-cli</packageSourceUrl>
+    <packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/azure-cli</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE.txt</licenseUrl>
-    <iconUrl>https://raw.githubusercontent.com/jbpaux/chocolatey-packages/master/azure-cli/azure-cli-logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/peterjohnsonme/chocolatey-packages/master/azure-cli/azure-cli-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/azure/azure-cli/</projectSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/cli/azure/install-azure-cli</docsUrl>
