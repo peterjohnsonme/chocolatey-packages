@@ -1,6 +1,6 @@
 
 [![](https://ci.appveyor.com/api/projects/status/github/peterjohnsonme/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/PeterJohnson21957/chocolatey-packages)
-[Update status](https://gist.github.com/peterjohnsonme/3d87ec89ddea7bc8d715df67c68cbdd8)
+[Update status](https://gist.github.com/peterjohnsonme/8f131672f10ddadd06eac53ae5fff3ce)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/peterj](https://chocolatey.org/profiles/peterj)
 
