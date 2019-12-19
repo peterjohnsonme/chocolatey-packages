@@ -8,7 +8,7 @@ $packageArgs = @{
     fileType       = "msi"
  
     softwareName   = 'Microsoft CLI 2.0 for Azure'
-    checksum       = '33e757c8ebcb655cb16fc5810ce2c1059363ba1266467d64d7561185328bda76'
+    checksum       = '32732453e8194d1002a6e0aa08715e4fae22c6e224ce5a6ce11b3cd6591668fe'
     checksumType   = 'sha256'
  
     silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
