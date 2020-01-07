@@ -8,7 +8,7 @@
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/azure/azure-cli/</projectUrl>
     <packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/azure-cli</packageSourceUrl>
-    <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE</licenseUrl>
     <iconUrl>https://raw.githubusercontent.com/peterjohnsonme/chocolatey-packages/master/azure-cli/azure-cli-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/azure/azure-cli/</projectSourceUrl>
