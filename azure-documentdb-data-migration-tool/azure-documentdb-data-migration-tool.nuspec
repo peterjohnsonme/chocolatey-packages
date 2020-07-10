@@ -8,12 +8,12 @@
     <projectUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectUrl>
     <packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/azure-documentdb-data-migration-tool</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-documentdb-datamigrationtool/blob/master/LICENSE.txt</licenseUrl>
-    <iconUrl>https://raw.githubusercontent.com/peterjohnsonme/chocolatey-packages/master/azure-documentdb-data-migration-tool/azure-cosmos-db-logo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/peterjohnsonme/chocolatey-packages/azure-documentdb-data-migration-tool/azure-cosmos-db-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/azure/cosmos-db/import-data</docsUrl>
     <tags>documentdbdatamigrationtool admin azure documentdb nosql data migration cosmosdb</tags>
-	<summary>The Cosmos DB Data Migration tool is an open source solution that imports data to Cosmos DB from a variety of sources.</summary>
+    <summary>The Cosmos DB Data Migration tool is an open source solution that imports data to Cosmos DB from a variety of sources.</summary>
     <description>The Cosmos DB Data Migration tool is an open source solution that imports data to Cosmos DB from a variety of sources, including:
 
 - JSON files
