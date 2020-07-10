@@ -2,17 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azure-documentdb-data-migration-tool</id>
-    <version>1.7</version>
-    <title>Azure DocumentDB Data Migration Tool</title>
+    <version>1.8</version>
+    <title>Azure CosmosDB Data Migration Tool</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectUrl>
-	<packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/AzureDocumentDbDataMigrationTool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/peterjohnsonme/chocolatey-packages/tree/master/azure-documentdb-data-migration-tool</packageSourceUrl>
     <licenseUrl>https://github.com/Azure/azure-documentdb-datamigrationtool/blob/master/LICENSE.txt</licenseUrl>
-	<iconUrl>https://github.com/peterjohnsonme/chocolatey-packages/raw/master/AzureDocumentDbDataMigrationTool/azure-documentdb-logo.png</iconUrl>
+    <iconUrl>https://github.com/peterjohnsonme/chocolatey-packages/raw/master/azure-documentdb-data-migration-tool/azure-documentdb-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectSourceUrl>
-    <docsUrl>https://docs.microsoft.com/en-us/azure/documentdb/documentdb-import-data</docsUrl>
-    <tags>documentdbdatamigrationtool admin azure documentdb nosql data migration</tags>
+    <docsUrl>https://docs.microsoft.com/en-us/azure/cosmos-db/import-data</docsUrl>
+    <tags>documentdbdatamigrationtool admin azure documentdb nosql data migration cosmosdb</tags>
 	<summary>The DocumentDB Data Migration tool is an open source solution that imports data to DocumentDB from a variety of sources.</summary>
     <description>The DocumentDB Data Migration tool is an open source solution that imports data to DocumentDB from a variety of sources, including:
 
@@ -23,7 +23,9 @@
 - Azure Table storage
 - Amazon DynamoDB
 - HBase
-- DocumentDB collections
+- Azure Cosmos containers
+	   
+While the import tool includes a graphical user interface (dtui.exe), it can also be driven from the command-line (dt.exe). In fact, there's an option to output the associated command after setting up an import through the UI. You can transform tabular source data, such as SQL Server or CSV files, to create hierarchical relationships (subdocuments) during import. Keep reading to learn more about source options, sample commands to import from each source, target options, and viewing import results.
 </description>
   </metadata>
   <files>
