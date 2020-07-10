@@ -11,11 +11,11 @@
     <licenseUrl>https://github.com/Azure/azure-cli/blob/master/LICENSE</licenseUrl>
     <iconUrl>https://raw.githubusercontent.com/peterjohnsonme/chocolatey-packages/master/azure-cli/azure-cli-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/azure/azure-cli/</projectSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/cli/azure/install-azure-cli</docsUrl>
     <tags>azurecli cli admin azure</tags>
-    <summary>The Azure CLI is Azure's command line experience for managing Azure resources.</summary>
-    <description>Azure CLI is optimized for managing and administering Azure resources from the command line, and for building automation scripts that work against the Azure Resource Manager.</description>
+    <summary>The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources.</summary>
+    <description>The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.</description>
+    <releaseNotes>https://docs.microsoft.com/en-us/cli/azure/release-notes-azure-cli?view=azure-cli-latest&tabs=azure-cli</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
