@@ -15,7 +15,7 @@
     <tags>azurecli cli admin azure</tags>
     <summary>The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources.</summary>
     <description>The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.</description>
-    <releaseNotes>https://docs.microsoft.com/en-us/cli/azure/release-notes-azure-cli?view=azure-cli-latest&amp;tabs=azure-cli</releaseNotes>
+    <releaseNotes>https://docs.microsoft.com/en-us/cli/azure/release-notes-azure-cli?view=azure-cli-latest</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
