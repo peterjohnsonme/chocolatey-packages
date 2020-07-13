@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -MaximumRedirection 0 -ErrorAction SilentlyContinue
 
     $url32 = $download_page.Headers.Location
-    $version = $url32 -split '-|.zip' | Select-Object -Last 1 -Skip 1
+    $version = $url32 -split 'dt|.zip' | Select-Object -Last 1 -Skip 1
 
     @{
         URL32   = $url32
