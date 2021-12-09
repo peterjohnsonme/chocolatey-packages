@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azure-documentdb-data-migration-tool</id>
-    <version>1.8.3</version>
+    <version>1.8.3.20210809</version>
     <title>Azure Cosmos DB Data Migration Tool</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/Azure/azure-documentdb-datamigrationtool</projectUrl>
