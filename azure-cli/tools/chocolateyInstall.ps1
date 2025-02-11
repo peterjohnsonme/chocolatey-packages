@@ -4,14 +4,14 @@ $packageName = 'azure-cli'
  
 $packageArgs = @{
     packageName    = $packageName
-    url            = 'https://azcliprod.blob.core.windows.net/msi/azure-cli-2.68.0.msi'
-    url64          = 'https://azcliprod.blob.core.windows.net/msi/azure-cli-2.68.0-x64.msi'
+    url            = 'https://azcliprod.blob.core.windows.net/msi/azure-cli-2.69.0.msi'
+    url64          = 'https://azcliprod.blob.core.windows.net/msi/azure-cli-2.69.0-x64.msi'
     fileType       = "msi"
  
     softwareName   = 'Microsoft CLI 2.0 for Azure'
-    checksum       = 'ce472c48311d5ee414e07e160a7b3c76028665e8fd3d5e3bb6dd3713b0ebe5e9'
+    checksum       = '9aec25a2dee61060c69bebb04ac2e353889ead6b5a6b58d20f3108383ae89afb'
     checksumType   = 'sha256'
-    checksum64     = '258beffe05ebe8faee9b7eb7b8db4fb875a4a38a60cb766a743304668b6a0c96'
+    checksum64     = '509e1e42184b36649a97256cc9f059cd5efa95ae2c7677411becac9e1870d03d'
     checksum64Type = 'sha256'
  
     silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
